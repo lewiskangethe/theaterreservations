@@ -7,5 +7,13 @@ public class CarExample2 {
         car1.setModel("Altima");
 
         System.out.println(car1.getMake()+" "+car1.getModel());
+
+        CarExample car2 = new CarExample();
+        car2.setMake("Kia");
+        car2.setModel("Seltos");
+
+        System.out.println(car2.getMake()+" "+car2.getModel());
+
+
     }
 }
