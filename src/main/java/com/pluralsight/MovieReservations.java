@@ -10,6 +10,7 @@ public class MovieReservations {
 
         System.out.println("Full name: ");
         String fullname = scanner.nextLine();
+        String[] namesplit = fullname.trim().split(" ");
 
         System.out.println("Date of show(MM/dd/yyyy): ");
 
@@ -29,7 +30,7 @@ public class MovieReservations {
                 """, fullname,date,ticketamount);
 
         System.out.printf("""
-                %d ticket(s) reserved for %s under %s
-                """,ticketamount,date,fullname);
+                %d ticket(s) reserved for %s under %s, %s
+                """,ticketamount,date,namesplit[1],namesplit[0]);
     }
 }
